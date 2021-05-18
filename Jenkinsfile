@@ -9,7 +9,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh '''rsync -avz ./  \'.git\' /app
+        sh '''rsync -avz ./ /app
 systemctl start nodeapp'''
       }
     }
