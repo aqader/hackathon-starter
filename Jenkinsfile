@@ -9,7 +9,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        pwd()
+        sh 'node app.js'
       }
     }
 
