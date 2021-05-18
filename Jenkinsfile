@@ -9,8 +9,8 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh '''sudo rsync -avz . /app/
-systemctl start nodeapp'''
+        sh '''rsync -avz . /app/
+sudo systemctl start nodeapp'''
       }
     }
 
